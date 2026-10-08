@@ -1,0 +1,54 @@
+site_name: ShiftControl - Planificador de Turnos y Fichaje
+site_description: Solución integral para la gestión de horarios, turnos y control horario en empresas.
+site_author: Hugo Font González
+
+theme:
+  name: material
+  language: es # idioma español
+  palette:
+    - media: "(prefers-color-scheme: light)" # color del tema en modo claro
+      scheme: default
+      primary: indigo # color principal de la barra
+      accent: deep purple # color secundario
+      toggle:
+        icon: material/brightness-7 # icono sol
+        name: Cambiar a modo oscuro
+    - media: "(prefers-color-scheme: dark)" # segunda opción, color oscuro
+      scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4 # icono luna
+        name: Cambiar a modo claro
+  font:
+    text: Roboto # tipo de letra principal
+    code: Roboto Mono # tipo de letra para código
+  features:
+    - navigation.instant # vista del menú horizontal
+    - navigation.tracking # navegación agrupada en la barra lateral
+    - navigation.top # botón para volver al inicio de la página
+    - navigation.expand # despliega las secciones del menú lateral
+    - content.code.copy # icono para copiar código
+
+# Configuración de extensiones Markdown
+markdown_extensions:
+  - admonition # notas y avisos
+  - pymdownx.details # desplegables
+  - pymdownx.superfences # bloques de código
+  - pymdownx.highlight: # resaltado de código
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite # resaltado de texto dentro del texto
+  - pymdownx.tabbed: # pestañas para organizar contenido
+      alternate_style: true
+  - tables # organización de tablas
+  - attr_list # atributos para HTML
+  - md_in_html # permite usar Markdown dentro de HTML
+
+# Configuración de navegación
+nav:
+  - Inicio: index.md # página principal
+  - Características Principales: caracteristicas.md # lista de características
+  - Control Horario y Fichaje: fichador.md # explicación del control horario y fichaje
+  - Guía y Ejemplos: guias.md # guías y ejemplos de uso
